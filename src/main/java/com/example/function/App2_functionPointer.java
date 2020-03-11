@@ -17,13 +17,19 @@ public class App2_functionPointer {
 		functionHandler(App2_functionPointer::functionPointer1);  // 
 
 		functionHandler(App2_functionPointer::functionPointer2);
-		
-		
-		//functionHandler(App2_functionPointer::functionPointer3); 
+	
+
 	}
 
+	/**
+			@FunctionalInterface
+			public interface Handler1<E> {
+			  void handle(E event);
+			}
+	 */
+	
 	// define input cua funtion la 1 @FunctionalInterface
-    static void functionHandler(Handler<String> handler) {
+    static void functionHandler(Handler1<String> handler) {
     	handler.handle("ok");
     }
 
@@ -37,7 +43,5 @@ public class App2_functionPointer {
     	System.out.println("functionPointer2:"+st);
     }
     
-    static void functionPointer3(String st1, String st2) {
-    	System.out.println("functionPointer2:"+st1 + ":" + st2);
-    }
+
 }

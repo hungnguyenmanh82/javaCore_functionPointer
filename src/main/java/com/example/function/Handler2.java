@@ -9,12 +9,6 @@ package com.example.function;
  */
 @FunctionalInterface
 public interface Handler2<E,K> {
-
-  /**
-   * Something has happened, so handle it.
-   *
-   * @param event  the event to handle
-   */
   void handle(E e, K k);
 }
 

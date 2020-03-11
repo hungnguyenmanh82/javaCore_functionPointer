@@ -15,8 +15,19 @@ public class App3_functionPointer_params {
 		
 		//dùng Lambda syntax => dùng như pointer function trên C++
 		functionHandler(App3_functionPointer_params::functionPointer3);
+		
+		functionHandler(App3_functionPointer_params::functionPointer4);
+		
+		functionHandler(App3_functionPointer_params::functionPointer5);
 	}
 
+	
+	/**
+		@FunctionalInterface
+		public interface Handler2<E,K> {
+		  	void handle(E e, K k);
+		}
+	 */
 	// define input cua funtion la 1 @FunctionalInterface
     static void functionHandler(Handler2<String,String> handler) {
     	handler.handle("param1","param2");
@@ -25,6 +36,14 @@ public class App3_functionPointer_params {
 
     
     static void functionPointer3(String st1, String st2) {
-    	System.out.println("functionPointer2:"+st1 + ":" + st2);
+    	System.out.println("functionPointer3:"+st1 + ":" + st2);
+    }
+    
+    static void functionPointer4(String st1, String st2) {
+    	System.out.println("functionPointer4:"+st1 + ":" + st2);
+    }
+    
+    static void functionPointer5(String st1, String st2) {
+    	System.out.println("functionPointer5:"+st1 + ":" + st2);
     }
 }

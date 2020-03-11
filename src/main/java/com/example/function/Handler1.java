@@ -8,7 +8,7 @@ package com.example.function;
  * neu muon function pointer co 2 parame thì ta khai bao 2 param o day
  */
 @FunctionalInterface
-public interface Handler<E> {
+public interface Handler1<E> {
 
   /**
    * Something has happened, so handle it.

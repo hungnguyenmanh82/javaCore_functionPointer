@@ -16,7 +16,14 @@ public class App1_functionPointer {
 		functionRunable(App1_functionPointer::sayHello);  // prints "Hello"
 	}
 
-    // Method that takes a "method" as argument
+    /**
+			@FunctionalInterface
+			public interface Runnable {
+			
+			    public abstract void run();
+			}
+     */
+	// xem khai bao Runable interface  => @FunctionalInterface
     static void functionRunable(Runnable toRun) {
         toRun.run();
     }
