@@ -24,7 +24,7 @@ public class App2_functionPointer {
 	/**
 			@FunctionalInterface
 			public interface Handler1<E> {
-			  void handle(E event);
+			    void handle(E event);
 			}
 	 */
 	
@@ -33,12 +33,12 @@ public class App2_functionPointer {
     	handler.handle("ok");
     }
 
-    
+    // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String)
     static void functionPointer1(String st) {
     	System.out.println("functionPointer1:"+st);
     }
 
-
+ // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String)
     static void functionPointer2(String st) {
     	System.out.println("functionPointer2:"+st);
     }

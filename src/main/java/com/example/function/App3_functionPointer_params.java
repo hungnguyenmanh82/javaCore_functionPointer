@@ -34,15 +34,17 @@ public class App3_functionPointer_params {
     }
 
 
-    
+    // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String,String)
     static void functionPointer3(String st1, String st2) {
     	System.out.println("functionPointer3:"+st1 + ":" + st2);
     }
     
+    // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String,String)
     static void functionPointer4(String st1, String st2) {
     	System.out.println("functionPointer4:"+st1 + ":" + st2);
     }
     
+    // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String,String)
     static void functionPointer5(String st1, String st2) {
     	System.out.println("functionPointer5:"+st1 + ":" + st2);
     }

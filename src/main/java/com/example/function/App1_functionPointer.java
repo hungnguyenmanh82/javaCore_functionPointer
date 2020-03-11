@@ -19,16 +19,16 @@ public class App1_functionPointer {
     /**
 			@FunctionalInterface
 			public interface Runnable {
-			
 			    public abstract void run();
 			}
+			
      */
 	// xem khai bao Runable interface  => @FunctionalInterface
     static void functionRunable(Runnable toRun) {
         toRun.run();
     }
 
-    // Method to pass
+    // funtion pointer cùng kiểu dữ liệu với Runnable.run()
     static void sayHello() {
         System.out.println("Hello");
     }
