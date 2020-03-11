@@ -1,5 +1,6 @@
 package com.example.function;
 
+import java.util.List;
 
 /**
  * Chỉ dùng từ Java8 => dùng cú pháp Lambda rất hay gọi function pointer giống hệt C++.
@@ -17,8 +18,7 @@ public class App2_functionPointer {
 		functionHandler(App2_functionPointer::functionPointer1);  // 
 
 		functionHandler(App2_functionPointer::functionPointer2);
-	
-
+		
 	}
 
 	/**
@@ -38,7 +38,7 @@ public class App2_functionPointer {
     	System.out.println("functionPointer1:"+st);
     }
 
- // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String)
+    // funtion pointer => cùng kiểu dữ liệu với Handler.handler(String)
     static void functionPointer2(String st) {
     	System.out.println("functionPointer2:"+st);
     }

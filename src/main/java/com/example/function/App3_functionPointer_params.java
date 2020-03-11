@@ -19,17 +19,20 @@ public class App3_functionPointer_params {
 		functionHandler(App3_functionPointer_params::functionPointer4);
 		
 		functionHandler(App3_functionPointer_params::functionPointer5);
+		
+		
+		
 	}
 
 	
 	/**
-		@FunctionalInterface
-		public interface Handler2<E,K> {
-		  	void handle(E e, K k);
-		}
+			@FunctionalInterface
+			public interface HandlerParams<E,K> {
+			  void handle(E e, K k);
+			}
 	 */
 	// define input cua funtion la 1 @FunctionalInterface
-    static void functionHandler(Handler2<String,String> handler) {
+    static void functionHandler(HandlerParams<String,String> handler) {
     	handler.handle("param1","param2");
     }
 
