@@ -18,8 +18,7 @@ public class App4_functionPointer_return {
 		
 		functionHandler(App4_functionPointer_return::functionPointer2);
 		
-		//=========================================
-		
+	
 
 	}
 
